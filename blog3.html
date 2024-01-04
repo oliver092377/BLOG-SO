@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Blog</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
@@ -37,24 +37,27 @@
 
     <main>
       <section class="grid-container blogpost-img-container">
-        <img src="assets/img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" alt="" />
+        <img src="assets/img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="" >
       </section>
       <section class="blogpost-main-container">
         <div class="grid-container-blog">
           <h3>Noticias</h3>
           <article>
-            <h1>NVIDIA presentaría sus nuevas tarjetas gráficas durante el CES 2024
-</h1>
+            <h1>Descubre que es estructura para almacenar datos más popular: "el Trie"</h1>
             <p>
-              Durante las últimas semanas han habido algunos rumores en la red sobre 
-		las nuevas tarjetas gráficas de NVIDIA para la su actual generación 
-		Ada Lovelace o RTX 40 Series, como prefiráis llamarlas.
+              Introducidos en 1959 independientemente por Rene de la Briandais1​ y Edward Fredkin,2​ un trie es una estructura de datos de tipo árbol que permite la recuperación de información (de ahí su nombre del inglés reTRIEval). 
             </p>
             <p>
-              Ahora lo nuevo es la posible fecha en la que NVIDIA va a dar a conocer los próximos modelos de las 40 Series que serían los Ti o Super y que, según el conocido tuitero kopite7kimi, será durante el CES 2024, la conferencia tecnológica más importante de cada año que tendrá lugar del 9 al 12 de enero.
+              La información almacenada en un trie es un conjunto de claves, donde una clave es una secuencia de símbolos pertenecientes a un alfabeto. Las claves son almacenadas en las hojas del árbol y los nodos internos son pasarelas para guiar la búsqueda. El árbol se estructura de forma que cada letra de la clave se sitúa en un nodo de forma que los hijos de un nodo representan las distintas posibilidades de símbolos diferentes que pueden continuar al símbolo representado por el nodo padre. Por tanto la búsqueda en un trie se hace de forma similar a como se hacen las búsquedas en un diccionario:
+            </p>
+            <p><em>
+              Se empieza en la raíz del árbol. Si el símbolo que estamos buscando es A entonces la búsqueda continúa en el subárbol asociado al símbolo A que cuelga de la raíz. Se sigue de forma análoga hasta llegar al nodo hoja. Entonces se compara la cadena asociada al nodo hoja y si coincide con la cadena de búsqueda entonces la búsqueda ha terminado en éxito, si no entonces el elemento no se encuentra en el árbol.
+            </em></p>
+	     <p>
+              Por eficiencia se suelen eliminar los nodos intermedios que sólo tienen un hijo, es decir, si un nodo intermedio tiene sólo un hijo con cierto carácter entonces el nodo hijo será el nodo hoja que contiene directamente la clave completa.
             </p>
             <p>
-              De momento, en la programación del evento NVIDIA no aparece como una de las compañías que van a tener su propio puesto en la feria, pero sí tiene tres conferencias programadas durante la misma de la que se desconocen las temáticas, así que una podría estar perfectamente reservada a presentar estas nuevas tarjetas gráficas.
+              Es muy útil para conseguir búsquedas eficientes en repositorios de datos muy voluminosos. La forma en la que se almacena la información permite hacer búsquedas eficientes de cadenas que comparten prefijos.
             </p>
           </article>
         </div>
